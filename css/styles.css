@@ -51,7 +51,7 @@ button {
 }
 
 
-/* Header */
+/*=== Header ===*/
 
 .header {
     background: var(--WHITE, #FFF);
@@ -89,7 +89,6 @@ button {
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
-    display: flex;
 }
 
 .header-menu-item {}
@@ -133,7 +132,9 @@ button {
 }
 
 
-/* Hero */
+
+/*=== Section 1 Hero ===*/
+
 .hero {
     background: #2E2F42;
     padding: 188px 0;
@@ -177,10 +178,11 @@ button {
 }
 
 
-/* About Us */
+/*=== Section 2 About Us ===*/
 
 .about-us {
     padding: 120px 0;
+
 }
 
 .visually-hidden {
@@ -221,7 +223,8 @@ button {
     color: #434455;
 }
 
-/* Our Team */
+/*=== Section 3 Our Team ===*/
+
 .our-team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -271,7 +274,8 @@ button {
     text-align: center;
 }
 
-/* Our Portfolio */
+/*==== Section 4 Our Portfolio ===*/
+
 .our-portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -323,6 +327,7 @@ button {
 }
 
 /* Footer*/
+
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
