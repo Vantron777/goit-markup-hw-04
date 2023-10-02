@@ -52,7 +52,6 @@ button {
 
 
 /*=== Header ===*/
-
 .header {
     background: var(--WHITE, #FFF);
     border-bottom: 1px solid #e7e9fc;
@@ -132,9 +131,7 @@ button {
 }
 
 
-
 /*=== Section 1 Hero ===*/
-
 .hero {
     background: #2E2F42;
     padding: 188px 0;
@@ -179,10 +176,8 @@ button {
 
 
 /*=== Section 2 About Us ===*/
-
 .about-us {
     padding: 120px 0;
-
 }
 
 .visually-hidden {
@@ -223,8 +218,8 @@ button {
     color: #434455;
 }
 
-/*=== Section 3 Our Team ===*/
 
+/*=== Section 3 Our Team ===*/
 .our-team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -274,8 +269,8 @@ button {
     text-align: center;
 }
 
-/*==== Section 4 Our Portfolio ===*/
 
+/*==== Section 4 Our Portfolio ===*/
 .our-portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -326,8 +321,8 @@ button {
     color: #434455;
 }
 
-/* Footer*/
 
+/* Footer*/
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
