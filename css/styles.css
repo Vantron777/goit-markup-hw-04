@@ -94,12 +94,6 @@ button {
     overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 
 /*========= Header ========*/
 
@@ -142,7 +136,9 @@ button {
     gap: 40px;
 }
 
-.header-nav-item {}
+.header-nav-item {
+    gap: 20px;
+}
 
 .header-nav-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -165,7 +161,7 @@ button {
 
 .current {
     color: var(--OCEAN, #404bbf);
-    position: relative;
+    position: relative
 }
 
 .current:after {
@@ -179,6 +175,8 @@ button {
     left: 0;
     bottom: -1px;
 }
+
+.header-nav-item current {}
 
 .header-address {
     margin-left: auto;
@@ -302,12 +300,6 @@ button {
     margin-bottom: 8px;
 }
 
-.socials-link:hover,
-:focus {
-    background-color: #404bbf;
-    ;
-}
-
 .icon {}
 
 
@@ -375,7 +367,6 @@ button {
 .socials-item {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link {
@@ -386,10 +377,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-icon {}
+.socials-icon {
+    fill: #f4f4fd;
+}
 
+.socials-link:hover,
+:focus {
+    background-color: #404bbf;
+}
 
 /*======== Section 4 Our Portfolio ======*/
 
@@ -422,9 +420,10 @@ button {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* 
 .our-portfolio-item:hover {
     transform: translateY(0%);
-}
+} */
 
 .our-portfolio-application-name {
     padding: 32px 16px;
@@ -446,6 +445,35 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb .text {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 32px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+
+    background: var(--IRIS, #4d5ae5);
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.thumb:hover .text {
+    transform: translateY(0);
 }
 
 
