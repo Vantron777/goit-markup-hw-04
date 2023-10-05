@@ -13,11 +13,11 @@
     --secondary-font: Raleway, sans-serif;
 }
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: "Roboto", sans-serif;
@@ -94,6 +94,7 @@ button {
     overflow: hidden;
 }
 
+/* ========================================== */
 
 /*========= Header ========*/
 
@@ -155,12 +156,6 @@ button {
     position: relative;
 }
 
-
-.header-nav-link:hover,
-:focus {
-    color: #404bbf;
-}
-
 .current {
     color: var(--OCEAN, #404bbf);
     position: relative;
@@ -178,7 +173,9 @@ button {
     bottom: -1px;
 }
 
-.header-nav-item current {}
+.current {
+    color: #404bbf;
+}
 
 .header-address {
     margin-left: auto;
@@ -208,6 +205,7 @@ button {
     color: #404bbf;
 }
 
+/* ==================================== */
 
 /*======= Section 1 Hero =======*/
 
@@ -474,8 +472,9 @@ button {
     letter-spacing: 0.02em;
 }
 
-.thumb:hover .text {
+.our-portfolio-item:hover .text {
     transform: translateY(0);
+    cursor: pointer;
 }
 
 
