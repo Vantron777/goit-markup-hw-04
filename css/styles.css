@@ -151,11 +151,33 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     gap: 40px;
+    text-decoration: none;
+    padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
 :focus {
     color: #404bbf;
+}
+
+.current {
+    color: var(--OCEAN, #404bbf);
+    position: relative;
+}
+
+.current:after {
+    background-color: #404bbf;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
 }
 
 .header-address {
@@ -175,6 +197,10 @@ button {
     letter-spacing: 0.02em;
     font-style: normal;
     align-items: center;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover,
@@ -223,7 +249,7 @@ button {
     padding: 16px 32px;
     margin: 0 auto;
     gap: 10px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover {
@@ -337,6 +363,7 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .socials {
@@ -348,6 +375,7 @@ button {
 .socials-item {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link {
@@ -505,8 +533,6 @@ button {
 :focus {
     background-color: #31d0aa;
 }
-
-.fill {}
 
 .footer-socials-icon {
     fill: #f4f4fd;
