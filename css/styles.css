@@ -139,8 +139,6 @@ button {
     gap: 20px;
 }
 
-.header-nav-item:hover {}
-
 .header-nav-link {
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 16px;
@@ -153,6 +151,11 @@ button {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link:hover,
+:focus {
+    color: #404bbf;
 }
 
 .current {
@@ -170,11 +173,6 @@ button {
     display: block;
     left: 0;
     bottom: -1px;
-}
-
-.header-menu-item:hover,
-:focus {
-    color: #404bbf;
 }
 
 .header-address {
@@ -218,6 +216,7 @@ button {
     background-position: center center;
     background-size: cover;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -488,8 +487,6 @@ button {
 .footer-container {
     display: flex;
     align-items: baseline;
-    margin: 0 auto;
-    padding: 0 156px;
 }
 
 .footer-logo-container {
@@ -520,7 +517,6 @@ button {
 }
 
 .footer-text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
